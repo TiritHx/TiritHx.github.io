@@ -18,7 +18,7 @@ if(window.innerWidth > 900) {
 }
 addCatsImages();
 document.getElementById("IwantCats").addEventListener("click", addCatsImages);
-document.getElementById("cats").addEventListener("click", (e) => console.log(e.target))
+document.getElementById("cats").addEventListener("click", (e) => console.log(e.target));
 
 
 // const addCatImage = () => {
