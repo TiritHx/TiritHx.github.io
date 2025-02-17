@@ -1,0 +1,25 @@
+body {
+    height: auto;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    background-color: rgb(53, 53, 53); /*rgb(252, 230, 204)*/
+    justify-content: center;
+    font-family: "Roboto" ,Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+
+    #time {
+        height: 10vw;
+        width: auto;
+        font-size: 10vw;
+        background-color: rgb(10, 10, 10);
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 1vw;
+    }
+}
