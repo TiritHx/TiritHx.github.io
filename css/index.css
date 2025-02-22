@@ -17,7 +17,7 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  background: rgb(40, 40, 40);
+  background: transparent;
   color: rgb(255, 255, 255);
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
   scroll-behavior: smooth;
