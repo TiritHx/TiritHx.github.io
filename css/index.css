@@ -11,76 +11,33 @@
     --angle: 360deg;
   }
 }
-body {
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  color: rgb(255, 255, 255);
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-  scroll-behavior: smooth;
-  text-align: center;
+html {
+  overflow-x: hidden;
 }
-body canvas {
-  width: 100vw;
+html body {
   height: 100vh;
-  max-width: 100vw;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -999;
-  filter: blur(2.5px);
-  overflow: hidden;
-}
-body #header {
-  width: 90%;
-  max-width: 90%;
-  font-size: 6rem;
-  letter-spacing: 5px;
-  margin: 2rem auto;
-}
-@media screen and (max-width: 1100px) {
-  body #header {
-    font-size: 5rem;
-  }
-}
-@media screen and (max-width: 550px) {
-  body #header {
-    font-size: 3.5rem;
-  }
-}
-body #container {
-  display: grid;
-  height: auto;
-  width: 80vw;
-  max-width: 1600px;
-  margin: auto;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: min-content;
-  gap: 25px;
-}
-@media screen and (max-width: 1100px) {
-  body #container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 550px) {
-  body #container {
-    grid-template-columns: 1fr;
-  }
-}
-body #container a {
-  position: relative;
-  background-color: white;
+  max-height: 100vh;
   width: 100%;
-  min-width: 100%;
-  aspect-ratio: 50/20;
-  border-radius: 10px;
+  max-width: 100vw;
+  margin: 0;
+  background-color: rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
+  font-family: "Lilita One", sans-serif;
 }
-body #container a::after, body #container a::before {
+html body #container #header {
+  font-size: 4rem;
+  text-align: center;
+  padding: 30px 0;
+  margin: 0;
+}
+html body #container .project {
+  background-color: rgb(40, 40, 40);
+  border-radius: 15px;
+  padding: 10px 20px;
+  position: relative;
+  margin: 0 20px 40px 20px;
+}
+html body #container .project::after, html body #container .project::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -89,20 +46,46 @@ body #container a::after, body #container a::before {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  background-image: conic-gradient(from var(--angle), rgba(65, 154, 255, 0.8), rgba(202, 0, 84, 0.8), rgba(65, 154, 255, 0.8));
+  background-image: conic-gradient(from var(--angle), rgb(65, 154, 255), rgb(0, 202, 91), rgb(65, 154, 255));
   padding: 3px;
-  border-radius: 10px;
+  border-radius: 15px;
   animation: 4s spin linear infinite;
 }
-body #container a::before {
+html body #container .project::before {
   filter: blur(1rem);
   opacity: 0.6;
 }
-body #container a img {
-  max-height: 100%;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+html body #container .project:-moz-any-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+html body #container .project:any-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+html body #container .project .title {
+  font-size: 3rem;
+}
+html body #container .project .title:-moz-any-link {
+  text-decoration: none;
+  color: rgb(178, 220, 255);
+}
+html body #container .project .title:any-link {
+  text-decoration: none;
+  color: rgb(178, 220, 255);
+}
+html body #container .project .description {
+  font-size: 2rem;
+  margin: 20px 0 0 0;
+  text-wrap: balance;
+}
+html body #container .project .description a:-moz-any-link {
+  text-decoration: none;
+  color: rgb(178, 220, 255);
+}
+html body #container .project .description a:any-link {
+  text-decoration: none;
+  color: rgb(178, 220, 255);
 }
 
 ::-webkit-scrollbar {

@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <script type="module" src="index.js" defer></script>
+    <!-- <script type="module" src="index.js" defer></script> -->
     <title>Home</title>
 </head>
 <body>
-    <canvas id="background"></canvas>
-    <div id="header">Projects</div>
     <div id="container">
-        <a href="./projects/cats/cats.html">
-            <img src="./projects/cats/image.svg" alt="Cats">
-        </a>
-        <!-- <a href="./projects/new_year/new_year.html">
-            <img src="./projects/new_year/image.svg" alt="Cats"> 
-        </a> --> <!-- project delayed bc idk what to put there yet xD -->
+        <div id="header">Projects</div>
+        <div class="project">
+            <a class="title" href="./projects/cats/cats.html">Cats</a>
+            <p class="description">Its simple project that uses <a href="https://thecatapi.com/">The Cat API</a>.</p>
+        </div>
+        <div class="project">
+            <a class="title" href="./projects/countdowns/countdowns.html">Countdowns</a>
+            <p class="description">This is just project I made for fun with many countdowns. (work in progress)</p>
+        </div>
+        <div class="project">
+            <a class="title" href="./projects/weather/weather.html">Weather</a>
+            <p class="description">Its project made to test how to show diffrent type of data like in a graph. I made it using <a href="https://open-meteo.com/">Open-Meteo</a>. (work in progress)</p>
+        </div>
+        <div class="project">
+            <a class="title" href="./projects/threejs/threejs.html">ThreeJS</a>
+            <p class="description">Its my testing sandbox for ThreeJS library. Made using ofcourse <a href="https://threejs.org/">ThreeJS</a>. (work in progress)</p>
+        </div>
     </div>
 </body>
 </html>
