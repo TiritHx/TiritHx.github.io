@@ -8,7 +8,7 @@ body {
   margin: 0;
   background-color: rgb(53, 53, 53); /*rgb(252, 230, 204)*/
   justify-content: center;
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lilita One", sans-serif;
   color: rgb(255, 255, 255);
 }
 body #time {

@@ -46,14 +46,14 @@ html body #container .project::after, html body #container .project::before {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  background-image: conic-gradient(from var(--angle), rgb(65, 154, 255), rgb(0, 202, 91), rgb(65, 154, 255));
+  background-image: conic-gradient(from var(--angle), rgb(64, 157, 219), rgb(136, 43, 243), rgb(64, 157, 219));
   padding: 3px;
   border-radius: 15px;
   animation: 4s spin linear infinite;
 }
 html body #container .project::before {
-  filter: blur(1rem);
-  opacity: 0.6;
+  filter: blur(0.5rem);
+  opacity: 0.5;
 }
 html body #container .project:-moz-any-link {
   text-decoration: none;

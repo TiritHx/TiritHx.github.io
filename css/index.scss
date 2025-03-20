@@ -15,8 +15,8 @@
     }
 
     &::before {
-        filter: blur(1rem);
-        opacity: 0.6;
+        filter: blur(0.5rem);
+        opacity: 0.5;
     }
 }
 
@@ -67,7 +67,7 @@ html {
                 position: relative;
                 margin: 0 20px 40px 20px;
 
-                @include fancy-border();
+                @include fancy-border((rgb(64, 157, 219), rgb(136, 43, 243), rgb(64, 157, 219)));
 
                 &:any-link {
                     text-decoration: none;
