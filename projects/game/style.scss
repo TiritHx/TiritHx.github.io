@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    font-family: "Lilita One", sans-serif;
+
+    #container {
+        height: 600px;
+        width: 600px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+        margin: auto;
+        padding-top: 20px;
+        
+
+        .light_up {
+            filter: invert(100%);
+        }
+
+        #arrow_up, #arrow_down, #arrow_left, #arrow_right, #center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(37, 37, 37);
+            border-radius: 15px;            
+        }
+
+        #arrow_main {
+            grid-area: 2 / 2 / 3 / 3;
+
+            img {
+                scale: 0.9;
+                max-height: 100%;
+                max-width: 100%;
+                filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(141deg) brightness(105%) contrast(101%);
+            }
+        }
+        #arrow_up { 
+            grid-area: 1 / 2 / 2 / 3; 
+        }
+        #arrow_down { 
+            grid-area: 3 / 2 / 4 / 3; 
+        }
+        #arrow_left { 
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        #arrow_right { 
+            grid-area: 2 / 3 / 3 / 4;
+        }
+    }
+}
