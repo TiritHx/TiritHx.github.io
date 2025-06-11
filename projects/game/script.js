@@ -9,3 +9,39 @@ const light_up = (element) => {
     element.classList = "light_up";
     
 }
+
+const rotate_element = (element, direction) => {
+    let deg = 0;
+    switch(direction) {
+        case "up":
+            deg = 0;
+            break;
+        case "down":
+            deg = 180;
+            break;
+        case "right":
+            deg = 90;
+            break;
+        case "left":
+            deg = 270;
+            break;
+        default:
+            deg = 0;
+            break;
+    }
+    element.style.transform = `rotate(${deg}deg)`;
+}
+
+const start = () => {} // https://www.w3schools.com/js/js_timing.asp ts gonna be fire in this
+const stop = () => {game_state = 0} // something needs to be added there I can feel it
+
+let game_state = 0;
+document.getElementById("header").addEventListener("click", () =>{ //game logic
+    if(game_state === 0){
+        game_state = 1;
+        start();
+    }
+    else{
+        stop();
+    }
+});
